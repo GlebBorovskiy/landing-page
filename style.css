@@ -1,4 +1,15 @@
-.container {
+@font-face {
+  font-family: "Barlow";
+  src: url("assets/Barlow-Medium.ttf") format("Medium");
+  src: url("assets/Barlow-SemiBold.ttf") format("SemiBold");
+  font-family: "PublicSans";
+  src: url("assets/PublicSans-VariableFont_wght.ttf") format("VariableFont_wght");
+  font-family: "Roboto";
+  src: url("assets/Roboto-Regular.ttf") format("Regular");
+}
+
+
+.header-container {
     width: 100%;
     max-width: 1400px;
     padding: 0 15px;
@@ -14,14 +25,43 @@
     float: right;
   }
 
-  nav ul {
+  .header-container nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: block;
   }
 
   nav li {
     display: inline-block; /*один из способов разместить элементы в строку*/
   }
 
+ 
+
+  .header-menu {
+    background-color: #0D458E;
+  }  
+
+  .header-container nav ul a:hover {
+    color: red;
+  }
+
+  .header-container nav ul a {
+    text-decoration: none;
+    font-weight: Roboto;
+  }
+
+  .header-main {
+    background: url("img/background-img.png");
+  }
   
+  .header-menu .name {
+    padding-right: 50%;
+  }
+
+  .lng {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: Transparent;
+  }
