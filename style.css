@@ -8,6 +8,10 @@
   src: url("assets/Roboto-Regular.ttf") format("Regular");
 }
 
+html body {
+  margin: 0;
+  padding: 0;
+}
 
 .header-container {
     width: 100%;
@@ -25,6 +29,10 @@
     float: right;
   }
 
+  nav li {
+    display: inline-block; /*один из способов разместить элементы в строку*/
+  }
+
   .header-container nav ul {
     margin: 0;
     padding: 0;
@@ -32,14 +40,13 @@
     display: block;
   }
 
-  nav li {
-    display: inline-block; /*один из способов разместить элементы в строку*/
-  }
-
- 
-
   .header-menu {
     background-color: #0D458E;
+    width: 870px;
+    min-height: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }  
 
   .header-container nav ul a:hover {
@@ -55,13 +62,13 @@
     background: url("img/background-img.png");
   }
   
-  .header-menu .name {
-    padding-right: 50%;
-  }
-
   .lng {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 40px;
     background-color: Transparent;
+  }
+
+  .header-menu a {
+    color: white;
   }
