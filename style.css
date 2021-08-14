@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Barlow";
+    src: url("assets/Barlow-Medium.ttf") format("Medium");
+    src: url("assets/Barlow-SemiBold.ttf") format("SemiBold");
+    font-family: "PublicSans";
+    src: url("assets/PublicSans-VariableFont_wght.ttf") format("VariableFont_wght");
+    font-family: "Roboto";
+    src: url("assets/Roboto-Regular.ttf") format("Regular");
+  }
+  
+  html body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .first-features-list {
+    margin-bottom: 182px;
+    background: #F0F2F5;
+  }
+
+  /*Отспус сверху всего списка */
+
+
+  .first-feature-item h1 {
+    font-size: 21px;
+    line-height: 21px;
+    margin: 5;
+    color: #2660A5;
+  } 
+
+  .first-features-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 1 / -1;
+    list-style-type: none;
+  }
+
+  .first-feature-item {
+    padding-top: 190px;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .first-feature-item p {
+    margin: 0;
+  } 
+
+  .first-feature-item p {
+    padding: 0 5px;
+  } 
+
+  .simp-icon::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/simp.png);
+    background-color: #FFA800;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 223px;
+    height: 108px;
+    top: 60px;
+    left: 0;
+  }
+
+  .auto-icon::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/autom.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 228px;
+    height: 118px;
+    top: 62px;
+    left: 0;
+  }
+
+  .virt-icon::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/virt.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 239px;
+    height: 134px;
+    top: 58px;
+    left: 0;
+  }
+
+  .orq-icon::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/orq.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 118px;
+    top: 58px;
+    left: 0;
+  }
+
+  .icon-cybe {
+    display: block;
+    height: 12px;
+    position: relative;
+    top: 15px;
+    line-height: 1;
+    color: #b3b3b3;
+    text-decoration: none;
+    float: left;
+    background-image: url(/img/gridshadow.png) -50px -100px no-repeat;
+    padding-left: 16px;
+}
